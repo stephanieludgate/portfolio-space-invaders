@@ -80,6 +80,7 @@ def fire_bullet(x,y):
     screen.blit(bulletImg, (x + 16, y + 10))
     
 def isCollision(enemyX, enemyY, bulletX, bulletY):
+    # using pythagorean theorem backwards to solve for the distance between two points
     distance = math.sqrt( (math.pow(enemyX-bulletX,2)) + (math.pow(enemyY-bulletY,2)) )
     if distance < 27:
         return True
