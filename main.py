@@ -53,7 +53,6 @@ num_of_enemies = 6
 
 for i in range (num_of_enemies):
     enemyImg.append(pygame.image.load('images/alien'+str(i+1)+'.png'))
-    print('alien'+str(i+1))
     enemyX.append(random.randint(0,736))
     enemyY.append(random.randint(0,380))
     enemyX_change.append(2)
